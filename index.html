@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit" />
+		<title>音视频数据互动DEMO</title>
+		<link rel="stylesheet" href="assets/css/amazeui.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+	</head>
+
+	<body>
+		<div style="width: 1200px;margin: 0 auto;">
+			<div style="text-align: center;">
+				<div id="serverConfig">
+					<span>服务器地址：</span>
+					<input id="serverURI" value="" /> &nbsp;&nbsp;&nbsp;
+					<span>access key：</span>
+					<input id="accessKey" value="" /> &nbsp;&nbsp;&nbsp;
+					<span>secret key：</span>
+					<input id="secretKey" value="" /> &nbsp;&nbsp;&nbsp;
+					<input id="initBtn" type="button" value="初始化" onclick="init()" />
+				</div>
+				<br>
+				<div align="center">
+					<span id="resultShowLine" style="font-size: 20px;color: green;"></span>
+				</div>
+			</div>
+			<hr />
+
+			<div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="tab-div" style="display: none;">
+				<ul class="am-tabs-nav am-nav am-nav-tabs">
+					<li class="am-active">
+						<a href="javascript: void(0)">用户001</a>
+					</li>
+					<li>
+						<a href="javascript: void(0)">用户002</a>
+					</li>
+					<li>
+						<a href="javascript: void(0)">用户003</a>
+					</li>
+				</ul>
+
+				<div class="am-tabs-bd">
+					<div class="am-tab-panel am-active">
+						<iframe frameborder=1 width=1200 height=670 id="iframe1"> </iframe>
+					</div>
+					<div class="am-tab-panel">
+						<iframe frameborder=1 width=1200 height=670 id="iframe2"> </iframe>
+					</div>
+					<div class="am-tab-panel">
+						<iframe frameborder=1 width=1200 height=670 id="iframe3"> </iframe>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/cn.tee3.avd-2.5.0.0.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
